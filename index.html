@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/dcbc334623.js" crossorigin="anonymous"></script>
+    <title>Awwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww</title>
+</head>
+
+<body style="background-color: black;">
+    <h1 id="fill" style="color: #fff;margin-top: 30%;margin-left: 40%;font-size: 150px;" class="fa"></h1>
+
+
+    <script>
+        const fills = () => {
+            var fill = document.getElementById('fill');
+            fill.innerHTML = "&#xf2cb";
+            fill.style.color="white";
+
+            setTimeout(() => {
+                fill.innerHTML = "&#xf2ca";
+            }, 1000);
+            setTimeout(() => {
+                fill.innerHTML = "&#xf2c9;";
+            }, 2000);
+            setTimeout(() => {
+                fill.innerHTML = "&#xf2c8";
+            }, 3000);
+            setTimeout(() => {
+                fill.innerHTML = "&#xf2c7";
+                fill.style.color = "red";
+            }, 4000);
+        }
+
+        fills();
+
+        setInterval(fills, 5000);
+    </script>
+</body>
+
+</html>
